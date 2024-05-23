@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Generated;
 
+import java.util.List;
+
 @Entity
 @Data
 public class Quiz {
@@ -13,5 +15,7 @@ public class Quiz {
     private Long id;
 
     private String title;
+
+transient private List<Question> questions;
 
 }
