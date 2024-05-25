@@ -11,5 +11,6 @@ public class Question {
     @Column(name = "question_id", nullable = false)
     private Long questionId;
     private String question;
+private Long quizId;
 
 }
